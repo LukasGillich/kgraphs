@@ -19,3 +19,8 @@
 
 <#simon> foaf:knows <lukas_page:lukas.ttl> .
 <lukas_page:lukas.ttl> a foaf:Person .
+
+
+_:team a foaf:Group .
+<#simon> foaf:member _:team .
+<#lukas_page:#lukas> foaf:member _:team .
