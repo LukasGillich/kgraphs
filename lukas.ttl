@@ -2,20 +2,26 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix wiki: <https://en.wikipedia.org/wiki/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix daniel_page: <https://daniel.degu.cl/profile.ttl> .
 
 <#lukas> a foaf:Person;
   foaf:name "Lukas Gillich"@en;
   foaf:familyName "Gillich"@en;
   foaf:givenName "Lukas"@en;
   foaf:age "23";
-  foaf:mbox <test@mail.com>,
-    <test@stud.uni-stuttgart.de> .
+  foaf:mbox "mailto:test@mail.com",
+    "mailto:test@stud.uni-stuttgart.de" .
 
 <#lukas> foaf:interest (wiki:Computer_vision
                         wiki:Artificial_intelligence) .
 
 <#lukas> foaf:isPrimaryTopicOf <> .
 
-<#lukas> foaf:knows <daniel_page:#daniel> .
-<daniel_page:#daniel> a foaf:Person .
+<#lukas> foaf:knows <https://raw.githubusercontent.com/LukasGillich/kgraphs/main/simon.ttl#simon> .
+<https://raw.githubusercontent.com/LukasGillich/kgraphs/main/simon.ttl#simon> a foaf:Person .
+
+<#lukas> foaf:knows <https://daniel.degu.cl/profile.ttl#daniel> .
+<https://daniel.degu.cl/profile.ttl#daniel> a foaf:Person .
+
+_:team a foaf:Group .
+<#lukas> foaf:member _:team .
+<https://raw.githubusercontent.com/LukasGillich/kgraphs/main/simon.ttl#simon> foaf:member _:team .
