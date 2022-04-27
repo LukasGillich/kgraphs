@@ -2,6 +2,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix wiki: <https://en.wikipedia.org/wiki/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix daniel_page: <https://daniel.degu.cl/profile.ttl> .
 
 <#lukas> a foaf:Person;
   foaf:name "Lukas Gillich"@en;
@@ -14,5 +15,8 @@
 <#lukas> foaf:interest (wiki:Computer_vision
                         wiki:Artificial_intelligence) .
 
-<#lukas> foaf:isPrimaryTopicOf <#simon> .
+<#lukas> foaf:isPrimaryTopicOf <> .
 
+<#lukas> foaf:knows daniel_page:#daniel;
+
+daniel_page:#daniel a foaf:Person;
