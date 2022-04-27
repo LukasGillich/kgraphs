@@ -1,0 +1,44 @@
+@base <https://daniel.degu.cl/profile.ttl> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sorg: <http://schema.org/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/affiliation> .
+
+<#daniel> a foaf:Person ;
+  foaf:name "Daniel Hernández"@es ;
+  foaf:familyName "Hernández"@es ;
+  foaf:givenName "Daniel"@es ;
+  foaf:mbox "mailto:daniel@degu.cl" ,
+          "mailto:daniel.hernandez@ipvs.uni-stuttgart.de" ;
+  foaf:image <https://daniel.degu.cl/images/daniel-2018-11-18.jpg> ;
+  foaf:homepage <https://daniel.degu.cl/> ;
+  foaf:workplaceHomepage <https://www.ipvs.uni-stuttgart.de/departments/ac/> ;
+  foaf:knows <http://aidanhogan.com/foaf.rdf#me> ;
+  foaf:isPrimaryTopicOf <https://daniel.degu.cl/> ,
+          <https://users.dcc.uchile.cl/~dhernand> ,
+          <https://orcid.org/0000-0002-7896-0875> ,
+          <https://dblp.uni-trier.de/pid/18/4942-2.html> ,
+          <https://scholar.google.com/citations?user=4K2-3iQAAAAJ> ,
+          <https://www.ipvs.uni-stuttgart.de/institute/team/Hernandez/> ;
+  sorg:affiliation dbr:University_of_Stuttgart .
+
+<> dct:about <#daniel> .
+
+<https://daniel.degu.cl/> a foaf:Document ;
+  rdfs:label "Daniel Hernandez's homepage"@en .
+
+<https://users.dcc.uchile.cl/~dhernand> a foaf:Document .
+<https://orcid.org/0000-0002-7896-0875> a foaf:Document .
+<https://dblp.uni-trier.de/pid/18/4942-2.html> a foaf:Document .
+<https://scholar.google.com/citations?user=4K2-3iQAAAAJ> a foaf:Document .
+<https://www.ipvs.uni-stuttgart.de/institute/team/Hernandez/> a foaf:Document .
+<https://www.ipvs.uni-stuttgart.de/departments/ac/> a foaf:Document .
+
+<http://aidanhogan.com/foaf.rdf#me> a foaf:Person ;
+  foaf:name "Aidan Hogan"@en .
+
+dbr:University_of_Stuttgart a sorg:Organization , dbo:University ;
+  foaf:name "University of Stutgart"@en ;
+  sorg:name "University of Stutgart"@en .
