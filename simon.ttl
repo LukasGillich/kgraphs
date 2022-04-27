@@ -23,4 +23,4 @@
 
 _:team a foaf:Group .
 <#simon> foaf:member _:team .
-<#lukas_page:#lukas> foaf:member _:team .
+<lukas_page:lukas.ttl> foaf:member _:team .
