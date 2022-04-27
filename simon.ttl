@@ -2,7 +2,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix wiki: <https://en.wikipedia.org/wiki/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
+@prefix daniel_pre: <https://daniel.degu.cl/profile.ttl#> .
+@prefix lukas_pre: 
+  <https://raw.githubusercontent.com/LukasGillich/kgraphs/main/lukas.ttl#> .
 
 <#simon> a foaf:Person;
   foaf:name "Simon König"@en;
@@ -17,12 +19,12 @@
 
 <#simon> foaf:isPrimaryTopicOf <> .
 
-<#simon> foaf:knows <https://raw.githubusercontent.com/LukasGillich/kgraphs/main/lukas.ttl#lukas> .
-<https://raw.githubusercontent.com/LukasGillich/kgraphs/main/lukas.ttl#lukas> a foaf:Person .
+<#simon> foaf:knows lukas_pre:lukas .
+lukas_pre:lukas a foaf:Person .
 
-<#simon> foaf:knows <https://daniel.degu.cl/profile.ttl#daniel> .
-<https://daniel.degu.cl/profile.ttl#daniel> a foaf:Person .
+<#simon> foaf:knows daniel_pre:daniel .
+daniel_pre:daniel a foaf:Person .
 
 _:team a foaf:Group .
 <#simon> foaf:member _:team .
-<https://raw.githubusercontent.com/LukasGillich/kgraphs/main/lukas.ttl#lukas> foaf:member _:team .
+lukas_pre:lukas foaf:member _:team .
