@@ -17,5 +17,5 @@
 
 <#simon> foaf:isPrimaryTopicOf <> .
 
-<#simon> foaf:knows <lukas_page:#lukas> .
-<lukas_page:#lukas> a foaf:Person .
+<#simon> foaf:knows <lukas_page:lukas.ttl> .
+<lukas_page:lukas.ttl> a foaf:Person .
