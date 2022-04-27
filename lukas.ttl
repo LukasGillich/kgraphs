@@ -17,6 +17,5 @@
 
 <#lukas> foaf:isPrimaryTopicOf <> .
 
-<#lukas> foaf:knows daniel_page:#daniel;
-
-daniel_page:#daniel a foaf:Person;
+<#lukas> foaf:knows <daniel_page:#daniel> .
+<daniel_page:#daniel> a foaf:Person .
