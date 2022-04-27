@@ -1,29 +1,28 @@
-@prefix main: <https://raw.githubusercontent.com/LukasGillich/kgraphs/main/> .
-@base <main:simon.ttl> .
+@base <https://raw.githubusercontent.com/LukasGillich/kgraphs/main/simon.ttl> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix wiki: <https://en.wikipedia.org/wiki/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix daniel: <https://daniel.degu.cl/profile.ttl#daniel> .
-# @prefix lukas_page: <https://raw.githubusercontent.com/LukasGillich/kgraphs/main/> .
+
 
 <#simon> a foaf:Person;
   foaf:name "Simon König"@en;
   foaf:familyName "König"@en;
   foaf:givenName "Simon"@en;
   foaf:age "23";
-  foaf:mbox <test_b@mail.com>,
-    <test_b@stud.uni-stuttgart.de> .
+  foaf:mbox "mailto:test_b@mail.com",
+    "mailto:test_b@stud.uni-stuttgart.de" .
 
 <#simon> foaf:interest (wiki:Computer_network
                         wiki:Artificial_intelligence) .
 
 <#simon> foaf:isPrimaryTopicOf <> .
 
-<#simon> foaf:knows <main:lukas.ttl> .
-<#simon> foaf:knows <daniel> .
-<main:lukas.ttl> a foaf:Person .
+<#simon> foaf:knows <https://raw.githubusercontent.com/LukasGillich/kgraphs/main/lukas.ttl#lukas> .
+<https://raw.githubusercontent.com/LukasGillich/kgraphs/main/lukas.ttl#lukas> a foaf:Person .
 
+<#simon> foaf:knows <https://daniel.degu.cl/profile.ttl#daniel> .
+<https://daniel.degu.cl/profile.ttl#daniel> a foaf:Person .
 
 _:team a foaf:Group .
 <#simon> foaf:member _:team .
-<main:lukas.ttl> foaf:member _:team .
+<https://raw.githubusercontent.com/LukasGillich/kgraphs/main/lukas.ttl#lukas> foaf:member _:team .
